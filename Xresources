@@ -1,0 +1,30 @@
+#!/bin/sh
+
+urxvt.scrollBar:	false
+
+urxvt.depth:		32
+urxvt.background:	[93]#101010
+urxvt.font: xft: Droid Sans Mono:antialias=true:size=9
+
+URxvt*foreground:	#B2B2B2
+URxvt*cursorColor:	#FFFFFF
+
+URxvt.transparent: 	true
+URxvt.shading:		30
+
+URxvt*color0:		#303030
+URxvt*color1:		#E1321A
+URxvt*color2:		#6AB017
+URxvt*color3:		#FFC005
+URxvt*color4:		#004F9E
+URxvt*color5:		#EC0048
+URxvt*color6:		#2AA7E7
+URxvt*color7:		#F2F2F2
+URxvt*color8:		#5D5D5D
+URxvt*color9:		#FF361E
+URxvt*color10:		#7BC91F
+URxvt*color11:		#FFD00A
+URxvt*color12:		#0071FF
+URxvt*color13:		#FF1D62
+URxvt*color14:		#4BB8FD
+URxvt*color15:		#A020F0
