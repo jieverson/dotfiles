@@ -10,9 +10,11 @@ while read -r line ; do
 	case $line in
 		S*)
 			# app docker
-			app="%{F${FG}}%{B${BG}}%{A:chromium:}%{A}%{B-}%{F-}    "
+			chrome="%{F${FG}}%{B${BG}}%{A:chromium:}%{A}%{B-}%{F-}"
+			app="${chrome}    "
+
 			# clock output
-			sys="${app}%{F$COLOR_SYS_FG}%{B$COLOR_SYS_BG} ${line#?} %{B-}%{F-}"
+			sys="%{F$COLOR_SYS_FG}%{B$COLOR_SYS_BG} ${line#?} %{B-}%{F-}"
 			;;
 		T*)
 			# xtitle output
@@ -88,5 +90,18 @@ while read -r line ; do
 			;;
 	esac
 	
-	printf "%s\n" "%{l}${wm}%{c}${title}%{r}${sys}"
+	# keyboard
+	case "$(xset -q|grep LED| awk '{ print $10 }')" in
+		"00001000") lang="EN" ;;
+		"00001001") lang="EN" ;;
+		"00001002") lang="EN" ;;
+		"00001003") lang="EN" ;;
+		"00001004") lang="EN" ;;
+		"00001005") lang="EN" ;;
+		"00001006") lang="EN" ;;
+		"00001007") lang="EN" ;;
+		*) lang="PT" ;;
+	esac
+
+	printf "%s\n" "%{l}${wm}%{c}${title}%{r}${app}${lang} ${sys}"
 done

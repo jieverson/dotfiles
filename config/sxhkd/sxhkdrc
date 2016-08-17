@@ -9,8 +9,8 @@ super + Return
 	urxvt
 
 # program launcher
-super + space
-	dmenu_run
+alt + space
+	dmenu_run -i
 
 # make sxhkd reload its configuration files:
 super + F5
@@ -18,9 +18,6 @@ super + F5
 
 Print
 	scrot ~/pictures/screenshots/%y-%m-%d-%T.png
-
-super + Print
-	scrot -s ~/pictures/screenshots/%y-%m-%d-%T.png
 
 #
 # bspwm hotkeys
@@ -83,7 +80,7 @@ super + alt + {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + alt + space
+super + alt + 0
 	bspc node -p cancel
 
 #
