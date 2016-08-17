@@ -19,6 +19,9 @@ super + F5
 Print
 	scrot ~/pictures/screenshots/%y-%m-%d-%T.png
 
+super + Print
+	scrot -s ~/pictures/screenshots/%y-%m-%d-%T.png
+
 #
 # bspwm hotkeys
 #

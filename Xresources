@@ -1,5 +1,3 @@
-#!/bin/sh
-
 URxvt.cursorUnderline: true
 urxvt.scrollBar:	false
 
@@ -13,7 +11,7 @@ URxvt*cursorColor:	#FFFFFF
 URxvt.transparent: 	true
 URxvt.shading:		30
 
-# Molokai theme
+! Molokai theme
 URxvt*background: #101010
 URxvt*foreground: #d0d0d0
 URxvt*color0: #101010

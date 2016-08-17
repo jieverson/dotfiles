@@ -51,6 +51,7 @@ fi
 xrandr --output VGA-1 --mode 1920x1080
 xsetroot -cursor_name left_ptr
 
+setxkbmap -layout br,us -option grp:alt_shift_toggle
 numlockx &
 sxhkd &
 panel &
