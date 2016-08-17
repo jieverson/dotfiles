@@ -58,6 +58,12 @@ chmod +x ~/.config/bspwm/panel_colors
 chmod +x ~/.config/bspwm/profile
 echo "lemonbar symlinked"
 
+# .build
+mkdir -p ~/.build
+ln -sf $(pwd)/build/clone.sh ~/.build/clone.sh
+chmod +x ~/.build/clone.sh
+echo ".build symlinked (RUN clone.sh and make all repos)"
+
 # .scripts
 mkdir -p ~/.scripts
 
@@ -68,5 +74,12 @@ chmod +x ~/.scripts/color_test.sh
 chmod +x ~/.scripts/pacman.sh
 chmod +x ~/.scripts/space_invaders.sh
 echo "color scripts symlinked"
+
+# base folders
+mkdir -p ~/pictures
+mkdir -p ~/pictures/screenshots
+mkdir -p ~/pictures/wallpapers
+mkdir -p ~/projects
+echo "create base folders"
 
 echo "DONE"

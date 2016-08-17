@@ -16,6 +16,9 @@ super + space
 super + F5
 	pkill -USR1 -x sxhkd
 
+Print
+	scrot ~/pictures/screenshots/%y-%m-%d-%T.png
+
 #
 # bspwm hotkeys
 #
@@ -61,7 +64,7 @@ super + ctrl + {Left,Right}
 	bspc desktop -f {prev,next}
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
+super + {_,ctrl + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
