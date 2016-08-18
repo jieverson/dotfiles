@@ -65,6 +65,11 @@ ln -sf $(pwd)/build/clone.sh ~/.build/clone.sh
 chmod +x ~/.build/clone.sh
 echo ".build symlinked (RUN clone.sh and make all repos)"
 
+# .oh-my-zsh
+mkdir -p ~/.oh-my-zsh && mkdir -p ~/.oh-my-zsh/themes
+ln -sf $(pwd)/oh-my-zsh/themes/my_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/my_robbyrussell.zsh-theme
+echo "oh-my-zsh theme symlinked"
+
 # .scripts
 mkdir -p ~/.scripts
 
