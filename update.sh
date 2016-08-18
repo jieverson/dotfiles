@@ -34,7 +34,6 @@ mkdir -p ~/.config
 
 mkdir -p ~/.config/bspwm
 ln -sf $(pwd)/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-chmod +x ~/.config/bspwm/bspwmrc
 echo "bspwmrc symlinked"
 
 mkdir -p ~/.config/sxhkd
@@ -53,16 +52,19 @@ ln -sf $(pwd)/config/bspwm/panel ~/.config/bspwm/panel
 ln -sf $(pwd)/config/bspwm/panel_bar ~/.config/bspwm/panel_bar
 ln -sf $(pwd)/config/bspwm/panel_colors ~/.config/bspwm/panel_colors
 ln -sf $(pwd)/config/bspwm/profile ~/.config/bspwm/profile
-chmod +x ~/.config/bspwm/panel
-chmod +x ~/.config/bspwm/panel_bar
-chmod +x ~/.config/bspwm/panel_colors
-chmod +x ~/.config/bspwm/profile
 echo "lemonbar symlinked"
+
+# gtk
+ln -sf $(pwd)/gtkrc-2.0 ~/.gtkrc-2.0
+echo "GTK-2.0 symlinked"
+
+mkdir -p ~/.config/gtk-3.0
+ln -sf $(pwd)/config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
+echo "GTK-3.0 symlinked"
 
 # .build
 mkdir -p ~/.build
 ln -sf $(pwd)/build/clone.sh ~/.build/clone.sh
-chmod +x ~/.build/clone.sh
 echo ".build symlinked (RUN clone.sh and make all repos)"
 
 # .oh-my-zsh
@@ -76,9 +78,6 @@ mkdir -p ~/.scripts
 ln -sf $(pwd)/scripts/color_test.sh ~/.scripts/color_test.sh
 ln -sf $(pwd)/scripts/pacman.sh ~/.scripts/pacman.sh
 ln -sf $(pwd)/scripts/space_invaders.sh ~/.scripts/space_invaders.sh
-chmod +x ~/.scripts/color_test.sh
-chmod +x ~/.scripts/pacman.sh
-chmod +x ~/.scripts/space_invaders.sh
 echo "color scripts symlinked"
 
 # base folders
