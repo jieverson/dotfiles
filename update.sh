@@ -8,6 +8,7 @@ ln -sf $(pwd)/xinitrc ~/.xinitrc
 echo ".xinitrc symlinked"
 
 ln -sf $(pwd)/Xresources ~/.Xresources
+ln -sf $(pwd)/Xresources ~/.Xdefaults
 echo ".Xresources symlinked"
 
 ln -sf $(pwd)/zprofile ~/.zprofile
