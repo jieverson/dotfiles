@@ -1,32 +1,36 @@
-URxvt.cursorUnderline: true
+*.cursorBlink: 	true
+
+!--urxvt--
 urxvt.scrollBar:	false
-
-urxvt.depth:		32
-urxvt.background:	[93]#101010
-urxvt.font: xft: Droid Sans Mono:antialias=true:size=9
-
-URxvt*foreground:	#B2B2B2
-URxvt*cursorColor:	#FFFFFF
-
+!urxvt.font: xtf:mona:size=9
 URxvt.transparent: 	true
-URxvt.shading:		30
+URxvt.shading: 		7	
 
-! Molokai theme
-URxvt*background: #101010
-URxvt*foreground: #d0d0d0
-URxvt*color0: #101010
-URxvt*color1: #960050
-URxvt*color2: #66aa11
-URxvt*color3: #c47f2c
-URxvt*color4: #30309b
-URxvt*color5: #7e40a5
-URxvt*color6: #3579a8
-URxvt*color7: #9999aa
-URxvt*color8: #303030
-URxvt*color9: #ff0090
-URxvt*color10: #80ff00
-URxvt*color11: #ffba68
-URxvt*color12: #5f5fee
-URxvt*color13: #bb88dd
-URxvt*color14: #4eb4fa
-URxvt*color15: #d0d0d0
+!--colors--
+*.foreground: white
+*.background: black
+
+!black
+*color0:  #2E3436
+*color8:  #555753
+!red
+*color1:  #a40000
+*color9:  #EF2929
+!green
+*color2:  #4E9A06
+*color10: #8AE234
+!yellow
+*color3:  #C4A000
+*color11: #FCE94F
+!blue
+*color4:  #3465A4
+*color12: #729FCF
+!purple
+*color5:  #75507B
+*color13: #AD7FA8
+!orange
+*color6:  #ce5c00
+*color14: #fcaf3e
+!white
+*color7:  #babdb9
+*color15: #EEEEEC
