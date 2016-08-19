@@ -2,7 +2,7 @@
 
 !--urxvt--
 urxvt.scrollBar:	false
-urxvt.font: xft: Droid Sans Mono:antialias=true:size=9
+urxvt.font: xft: DejaVu Sans Mono:antialias=true:size=9
 URxvt.transparent: 	true
 URxvt.shading: 		7	
 
