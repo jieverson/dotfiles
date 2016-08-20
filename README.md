@@ -22,5 +22,8 @@ $ ~/.dotfiles/update.sh
 <p align="center">
   <img src="screenshots/ricing.png" />
 </p>
+<p align="center">
+  <img src="screenshots/raspbian.png" />
+</p>
 
 > **TODO:** fonts, pacman, aur & oh-my-zsh
