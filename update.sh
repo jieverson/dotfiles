@@ -20,9 +20,6 @@ echo ".zshrc symlinked"
 ln -sf $(pwd)/gitconfig ~/.gitconfig
 echo ".gitconfig symlinked"
 
-ln -sf $(pwd)/fehbg ~/.fehbg
-echo ".fehbg symlinked"
-
 ln -sf $(pwd)/vimrc ~/.vimrc
 echo ".vimrc symlinked"
 
