@@ -103,7 +103,10 @@ super + @button{1-3}
 super + {minus,equal}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap`{+,-} 2))
 
-#audio
+#
+# volume control
+#
+
 XF86AudioRaiseVolume
 	sh -c "pactl set-sink-mute 1 false ; pactl set-sink-volume 1 +5%"
 
