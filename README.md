@@ -1,5 +1,5 @@
 # .dotfiles
-My arch linux configuration files. (See Arch Linux for Dummies [here](https://github.com/jieverson/dotfiles/wiki/arch-linux-for-dummies))
+My arch linux configuration files. (See my Arch Linux for Dummies [here](https://github.com/jieverson/dotfiles/wiki/arch-linux-for-dummies))
 
 ### usage
 Just run `update.sh` for pull last git version and symlink all dotfiles.
