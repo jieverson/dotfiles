@@ -26,6 +26,9 @@ echo ".vimrc symlinked"
 ln -sf $(pwd)/wallpaper.png ~/.wallpaper.png
 echo "wallpaper symlinked"
 
+ln -sf $(pwd)/asoundrc ~/.asoundrc
+echo ".asoundrc symlinked"
+
 # .config
 mkdir -p ~/.config
 

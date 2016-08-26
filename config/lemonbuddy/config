@@ -19,7 +19,7 @@ font-1 = FontAwesome:size=10:weight=heavy
 
 modules-left = cpu ram xtitle
 modules-center = bspwm
-modules-right = lang wifi clock battery
+modules-right = lang volume wifi clock battery
 
 [module/xtitle]
 type = custom/script
@@ -49,8 +49,11 @@ label-disconnected =  not connected
 
 [module/volume]
 type = internal/volume
-master_mixer = IEC958
-speaker_mixer = IEC958
+speaker_mixer = Speaker
+headphone_mixer = Headphone
+headphone_control_numid = 23
+format-volume =    <label-volume>
+label-muted =  muted
 
 [module/lang]
 type = custom/script
