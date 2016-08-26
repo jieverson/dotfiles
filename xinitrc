@@ -54,5 +54,5 @@ xsetroot -cursor_name left_ptr
 setxkbmap -layout br,us -option grp:win_space_toggle
 numlockx &
 sxhkd &
-panel &
+lemonbuddy_wrapper main &
 exec bspwm

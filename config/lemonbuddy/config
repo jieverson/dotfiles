@@ -1,0 +1,93 @@
+[settings]
+
+[bar/main]
+top = true
+dock = true
+width = 100%
+height = 20
+background = #333232
+foreground = #a7a5a5
+spacing = 1
+lineheight = 1
+separator = |
+padding_left = 2
+padding_right = 2
+module_margin_left = 2
+module_margin_right = 2
+font-0 = sans:size=8
+font-1 = FontAwesome:size=10:weight=heavy
+
+modules-left = cpu ram xtitle
+modules-center = bspwm
+modules-right = lang wifi clock battery
+
+[module/xtitle]
+type = custom/script
+exec = xtitle -s
+tail = true
+format =    <output>
+
+[module/cpu]
+type = internal/cpu
+label = CPU: %percentage%
+
+[module/ram]
+type = internal/memory
+label = RAM: %percentage_used%
+
+[module/clock]
+type = internal/date
+date =  %d-%m-%Y %H:%M
+
+[module/wifi]
+type = internal/network
+interface = wlp3s0
+interval = 3
+ping_interval = 3
+label-connected =  %essid% [%local_ip%]
+label-disconnected =  not connected
+
+[module/volume]
+type = internal/volume
+master_mixer = IEC958
+speaker_mixer = IEC958
+
+[module/lang]
+type = custom/script
+exec = ~/.config/lemonbuddy/lang.sh
+tail = true
+format =    <output>
+
+[module/bspwm]
+type = internal/bspwm
+format = <label-state> <label-mode>
+label-active = 
+label-active-padding = 1
+label-active-foreground = #FFF
+label-occupied = 
+label-occupied-padding = 1
+label-empty = 
+label-empty-padding = 1
+label-monocle = 
+label-monocle-foreground = #55FFFFFF
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+poll_interval = 3
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+label-full =  %percentage%
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+bar-capacity-width = 10
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate_ms = 750

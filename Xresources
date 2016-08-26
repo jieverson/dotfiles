@@ -4,7 +4,7 @@
 urxvt.scrollBar:	false
 urxvt.font: xft: DejaVu Sans Mono:antialias=true:size=9
 URxvt.transparent: 	true
-URxvt.shading: 		7	
+URxvt.shading: 		20	
 
 !--colors--
 *.foreground: #8CA68C

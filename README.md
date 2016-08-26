@@ -20,7 +20,7 @@ $ ~/.dotfiles/update.sh
   <img src="screenshots/dev.png" />
 </p>
 <p align="center">
-  <img src="screenshots/ricing.png" />
+  <img src="screenshots/web.png" />
 </p>
 <p align="center">
   <img src="screenshots/raspbian.png" />

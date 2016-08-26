@@ -37,6 +37,11 @@ mkdir -p ~/.config/sxhkd
 ln -sf $(pwd)/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 echo "sxhkdrc symlinked"
 
+mkdir -p ~/.config/lemonbuddy
+ln -sf $(pwd)/config/lemonbuddy/config ~/.config/lemonbuddy/config
+ln -sf $(pwd)/config/lemonbuddy/lang.sh ~/.config/lemonbuddy/lang.sh
+echo "lemonbuddy symlinked"
+
 mkdir -p ~/.config/ranger
 ln -sf $(pwd)/config/ranger/rc.conf ~/.config/ranger/rc.conf
 echo "ranger symlinked"
@@ -45,11 +50,11 @@ mkdir -p ~/.config/Code && mkdir -p ~/.config/Code/User
 ln -sf $(pwd)/config/Code/User/settings.json ~/.config/Code/User/settings.json
 echo "vscode symlinked"
 
-ln -sf $(pwd)/config/bspwm/panel ~/.config/bspwm/panel
-ln -sf $(pwd)/config/bspwm/panel_bar ~/.config/bspwm/panel_bar
-ln -sf $(pwd)/config/bspwm/panel_colors ~/.config/bspwm/panel_colors
-ln -sf $(pwd)/config/bspwm/profile ~/.config/bspwm/profile
-echo "lemonbar symlinked"
+#ln -sf $(pwd)/config/bspwm/panel ~/.config/bspwm/panel
+#ln -sf $(pwd)/config/bspwm/panel_bar ~/.config/bspwm/panel_bar
+#ln -sf $(pwd)/config/bspwm/panel_colors ~/.config/bspwm/panel_colors
+#ln -sf $(pwd)/config/bspwm/profile ~/.config/bspwm/profile
+#echo "lemonbar symlinked"
 
 # gtk
 ln -sf $(pwd)/gtkrc-2.0 ~/.gtkrc-2.0
@@ -65,6 +70,10 @@ ln -sf $(pwd)/build/clone.sh ~/.build/clone.sh
 echo ".build symlinked (RUN clone.sh and make all repos)"
 
 # .oh-my-zsh
+[ -d ~/.oh-my-zsh ] || git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+[ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ] || git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+echo "oh my zsh configured!"
+
 mkdir -p ~/.oh-my-zsh && mkdir -p ~/.oh-my-zsh/themes
 ln -sf $(pwd)/oh-my-zsh/themes/my_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/my_robbyrussell.zsh-theme
 echo "oh-my-zsh theme symlinked"
