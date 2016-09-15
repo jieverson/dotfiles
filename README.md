@@ -17,10 +17,16 @@ $ ~/.dotfiles/update.sh
   <img src="screenshots/clean.png" />
 </p>
 <p align="center">
-  <img src="screenshots/dev.png" />
+  <img src="screenshots/work.png" />
 </p>
 <p align="center">
   <img src="screenshots/web.png" />
+</p>
+<p align="center">
+  <img src="screenshots/dev.png" />
+</p>
+<p align="center">
+  <img src="screenshots/fun.png" />
 </p>
 <p align="center">
   <img src="screenshots/raspbian.png" />
