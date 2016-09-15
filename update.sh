@@ -84,10 +84,8 @@ echo "oh-my-zsh theme symlinked"
 # .scripts
 mkdir -p ~/.scripts
 
-ln -sf $(pwd)/scripts/colorscheme.sh ~/.scripts/colorscheme.sh
-ln -sf $(pwd)/scripts/pacman.sh ~/.scripts/pacman.sh
-ln -sf $(pwd)/scripts/space_invaders.sh ~/.scripts/space_invaders.sh
-echo "color scripts symlinked"
+ln -sf $(pwd)/scripts/* ~/.scripts
+echo "scripts symlinked"
 
 # base folders
 mkdir -p ~/pictures
