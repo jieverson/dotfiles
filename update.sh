@@ -59,6 +59,11 @@ echo "vscode symlinked"
 #ln -sf $(pwd)/config/bspwm/profile ~/.config/bspwm/profile
 #echo "lemonbar symlinked"
 
+# fonts
+mkdir -p ~/.config/fontconfig
+ln -sf $(pwd)/config/fontconfig/fonts.conf ~/.config/fontconfig
+echo "fonts,conf symlinked"
+
 # gtk
 ln -sf $(pwd)/gtkrc-2.0 ~/.gtkrc-2.0
 echo "GTK-2.0 symlinked"

@@ -3,6 +3,7 @@
 !--urxvt--
 urxvt.scrollBar:	false
 urxvt.font: xft:DejaVu Sans Mono:antialias=true:size=9
+!URxvt.letterSpace:  4
 URxvt.transparent: 	true
 URxvt.shading: 		20
 URxvt.depth: 		32

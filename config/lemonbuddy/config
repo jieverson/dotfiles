@@ -49,9 +49,7 @@ label-disconnected =  not connected
 
 [module/volume]
 type = internal/volume
-speaker_mixer = Speaker
-headphone_mixer = Headphone
-headphone_control_numid = 23
+master_mixer = Master
 format-volume =    <label-volume>
 label-muted =  muted
 
