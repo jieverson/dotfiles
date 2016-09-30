@@ -14,5 +14,5 @@ compinit
 # End of lines added by compinstall
 
 ZSH_THEME="my_robbyrussell"
-plugins=(git zsh-syntax-highlighting archlinux)
+plugins=(git nyan zsh-syntax-highlighting archlinux)
 source $ZSH/oh-my-zsh.sh
