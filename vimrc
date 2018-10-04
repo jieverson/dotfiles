@@ -9,6 +9,9 @@
 set number
 set mouse=a
 set wildmenu
+set incsearch
+set hlsearch
+set showcmd
 syn on
 
 "let g:molokai_original = 1
